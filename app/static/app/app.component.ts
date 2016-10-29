@@ -5,7 +5,7 @@ import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>My First Angular App</h1>
+  template: `<h1>Parkingi na Politechnice</h1>
                 <parking-detail [parking]="parking" *ngFor="let parking of parkings">
                 </parking-detail>
 

@@ -12,7 +12,7 @@ def index():
 def api():
     data_json_array = urllib2.urlopen("http://iparking-ws.pwr.edu.pl/dajWolneMiejsca").read()[5:-1]
     data_json_array = data_json_array.replace("liczba_miejsc", "place_count").replace("czas_pomiaru", "timestamp")
-    return "{ data: "+data_json_array+"}"
+    return "{ \"data\": "+data_json_array+"}"
 
 
 @app.route('/<path:path>')
