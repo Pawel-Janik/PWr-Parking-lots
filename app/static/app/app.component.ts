@@ -1,27 +1,7 @@
 import { Component } from '@angular/core';
 import { Parking } from './parking';
-
-const PARKINGS: Parking[] =
-    [
-        {
-            "place_count":129,
-            "timestamp":"2016-10-29 08:58:01",
-            "trend":-1,
-            "parking_id":4
-        },
-        {
-            "place_count":50,
-            "timestamp":"2016-10-29 08:58:01",
-            "trend":-1,
-            "parking_id":2
-        },
-        {
-            "place_count":232,
-            "timestamp":"2016-10-29 08:58:03",
-            "trend":-1,
-            "parking_id":1
-        }
-    ];
+import { ParkingService } from './parking.service';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -29,10 +9,23 @@ const PARKINGS: Parking[] =
                 <parking-detail [parking]="parking" *ngFor="let parking of parkings">
                 </parking-detail>
 
-             `
+            `,
+    providers: [ParkingService]
+
 })
 
-export class AppComponent {
-    parkings = PARKINGS;
+export class AppComponent implements OnInit {
+    constructor(private parkingService: ParkingService) { }
+
+    ngOnInit(): void {
+        this.getParkings();
+    }
+
+    parkings: Parking[];
+
+    getParkings(): void {
+        this.parkingService.getParkings().then(heroes => this.parkings = heroes);
+    }
+
 }
 
