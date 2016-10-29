@@ -55,3 +55,10 @@ fabric.properties
 *.js
 *.js.map
 /app/static/node_modules/
+.DS_Store
+.idea/
+app/.DS_Store
+app/__init__.pyc
+app/routes.pyc
+app/static/.DS_Store
+config.pyc
