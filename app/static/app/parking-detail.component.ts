@@ -3,11 +3,9 @@ import { Parking } from './parking';
 
 @Component({
     selector: 'parking-detail',
-    template: `
-        <h2>Parking details</h2>
-        <h3>id: {{parking.parking_id}}</h3>
-        <h3>place_count: {{parking.place_count}}</h3>
-    `
+    templateUrl: 'app/template/parking-detail.component.html',
+
+
 })
 export class ParkingDetailComponent {
     @Input()

@@ -1,0 +1,16 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-faded">
+        <div class="navbar-toggleable-xs" id="navbar-header">
+            <a class="navbar-brand" href="https://v4-alpha.getbootstrap.com/examples/navbar/#">Parkingomat</a>
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+    </nav> <!-- /navbar -->
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <parking-detail [parking]="parking" *ngFor="let parking of parkings">
+        </parking-detail>
+    </div>
+
+</div>

@@ -4,12 +4,9 @@ import { ParkingService } from './parking.service';
 import { OnInit } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Parkingi na Politechnice</h1>
-                <parking-detail [parking]="parking" *ngFor="let parking of parkings">
-                </parking-detail>
+    selector: 'my-app',
 
-            `,
+    templateUrl: "app/template/app.component.html",
     providers: [ParkingService]
 
 })
