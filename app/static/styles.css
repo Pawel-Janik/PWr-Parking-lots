@@ -12,4 +12,9 @@ h2, h3 {
 body {
   margin: 2em;
 }
-
+.text-muted {
+  font-size: small;
+}
+.jumbotron {
+  margin-bottom: 0px !important;
+}
