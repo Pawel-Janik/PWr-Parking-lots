@@ -3,7 +3,7 @@ import { Parking } from './parking';
 
 @Component({
     selector: 'parking-detail',
-    templateUrl: 'app/template/parking-detail.component.html',
+    templateUrl: './template/parking-detail.component.html',
 
 
 })

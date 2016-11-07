@@ -4,9 +4,9 @@ import { ParkingService } from './parking.service';
 import { OnInit } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app-root',
 
-    templateUrl: "app/template/app.component.html",
+    templateUrl: "./template/app.component.html",
     providers: [ParkingService]
 
 })

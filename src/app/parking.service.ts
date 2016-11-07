@@ -8,8 +8,8 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class ParkingService {
-    private heroesUrl = 'api';  // URL to web api
-    public LOCAL = true;
+    private heroesUrl = '/api/public/';  // URL to web api
+    public LOCAL = false;
     constructor(private http: Http) { }
 
     getParkings(): Promise<Parking[]> {
@@ -17,7 +17,7 @@ export class ParkingService {
             //noinspection TypeScriptUnresolvedFunction
             return this.http.get(this.heroesUrl)
                 .toPromise()
-                .then(response => response.json().data as Parking[])
+                .then(response => response.json().parkings as Parking[])
                 .catch(this.handleError);
         }
         else{
