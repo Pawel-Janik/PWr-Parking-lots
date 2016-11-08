@@ -57,3 +57,4 @@ fabric.properties
 /e2e/
 /protractor.conf.js
 /karma.conf.js
+.idea/

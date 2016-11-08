@@ -1,6 +1,9 @@
 <div class="card">
     <div class="card-block">
         <h4 class="card-title">{{parking.longName}}</h4>
-        <p class="card-text">place_count: {{parking.freePlaces}}</p>
+        <p class="card-text">Liczba wolnych miejsc: <b>{{parking.freePlaces}}/{{parking.totalPlaces}}</b>
+            <span *ngIf="parking.trend<0" class="tag tag-warning">spada</span>
+            <span *ngIf="parking.trend>0" class="tag tag-info">rośnie</span>
+        </p>
     </div>
 </div>
