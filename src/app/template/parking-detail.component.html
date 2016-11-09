@@ -5,5 +5,7 @@
             <span *ngIf="parking.trend<0" class="tag tag-warning">spada</span>
             <span *ngIf="parking.trend>0" class="tag tag-info">rośnie</span>
         </p>
+        <history-chart [chart]="parking.chart"></history-chart>
+
     </div>
 </div>

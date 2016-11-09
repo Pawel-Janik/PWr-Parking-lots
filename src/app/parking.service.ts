@@ -8,7 +8,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class ParkingService {
-    private heroesUrl = '/api/public/';  // URL to web api
+    private heroesUrl = '/api/public?charts=true';  // URL to web api
     public LOCAL = false;
     constructor(private http: Http) { }
 

@@ -1,3 +1,4 @@
+import {ChartPoint} from "./chart-point";
 export class Parking {
 	shortName: string;
 	longName: string;
@@ -7,4 +8,6 @@ export class Parking {
     measureTime: string;
     trend: number;
     parkingId: number;
+    chart: Array<ChartPoint>;
+
 }

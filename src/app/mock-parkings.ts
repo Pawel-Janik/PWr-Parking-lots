@@ -9,7 +9,8 @@ export const PARKINGS: Parking[] =
           "totalPlaces": 272,
           "measureTime": "10:40",
           "trend": -1,
-          "parkingId": 1
+          "parkingId": 1,
+            "chart": []
         },
         {
           "shortName": "WRO",
@@ -19,7 +20,9 @@ export const PARKINGS: Parking[] =
           "totalPlaces": 147,
           "measureTime": "10:40",
           "trend": -1,
-          "parkingId": 4
+          "parkingId": 4,
+            "chart": []
+
         },
         {
           "shortName": "C13",
@@ -29,6 +32,7 @@ export const PARKINGS: Parking[] =
           "totalPlaces": 54,
           "measureTime": "10:40",
           "trend": -1,
-          "parkingId": 2
+          "parkingId": 2,
+            "chart": []
         }
     ];
