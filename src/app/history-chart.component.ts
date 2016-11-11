@@ -18,12 +18,15 @@ export class HistoryChartComponent implements OnInit {
     public lineChartLabels:Array<any> = [];
     public lineChartType:string = 'line';
     public lineChartLegend:boolean = false;
+    public lineChartOptions:any = {
+
+    };
 
 
     ngOnInit(): void {
         var i = 0;
         for (var item of this.chart) {
-            if(i%10==0){
+            if(i%20==0){
                 this.lineChartData[0].push(item.places);
                 this.lineChartLabels.push(item.time);
             }

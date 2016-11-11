@@ -4,8 +4,6 @@ import { Parking } from './parking';
 @Component({
     selector: 'parking-detail',
     templateUrl: './template/parking-detail.component.html',
-
-
 })
 export class ParkingDetailComponent {
     @Input()
