@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve --proxy-config proxy.conf.json & npm run _server:run",
+    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json & npm run _server:run",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
