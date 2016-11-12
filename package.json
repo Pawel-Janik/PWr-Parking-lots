@@ -1,9 +1,9 @@
 {
-  "name": "angular2-express-starter",
-  "version": "1.0.0",
-  "description": "Starter application of Angular2 with Express",
+  "name": "ParkingomatPWR",
+  "version": "0.1.0",
+  "description": "Progressive Web App featuring real time data about parking lots on Wrocław Univeristy of Technology.",
   "main": "server/app.js",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "angular-cli": {},
   "scripts": {
     "start": "ng serve --proxy-config proxy.conf.json & npm run _server:run",
@@ -16,7 +16,7 @@
     "_server:run": "tsc -p ./server && concurrently \"tsc -w -p ./server\" \"nodemon dist/server/bin/www.js\" ",
     "_server:build": "tsc -p ./server"
   },
-  "author": "Vlado Tešanović",
+  "author": "Paweł Janik",
   "private": true,
   "dependencies": {
     "@angular/common": "~2.1.0",
