@@ -19,7 +19,17 @@ export class HistoryChartComponent implements OnInit {
     public lineChartType:string = 'line';
     public lineChartLegend:boolean = false;
     public lineChartOptions:any = {
-
+        scales: {
+            yAxes: [{
+                ticks: {
+                    /*
+                    max: 5,
+                    min: 0,
+                    stepSize: 0.5
+                    */
+                }
+            }]
+        }
     };
 
 
