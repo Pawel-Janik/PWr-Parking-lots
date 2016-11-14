@@ -42,14 +42,7 @@ export class HistoryChartComponent implements OnInit {
             }
             i++;
         }
+        this.lineChartData[0].push(this.chart[this.chart.length-1].places);
+        this.lineChartLabels.push(this.chart[this.chart.length-1].time);
     }
-
-    public chartClicked(e:any):void {
-        //console.log(e);
-    }
-
-    public chartHovered(e:any):void {
-        //console.log(e);
-    }
-
 }
