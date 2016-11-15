@@ -1,6 +1,9 @@
 <div class="card">
-    <div class="card-block">
+    <div class="fill card-img-top" style='background: url("assets/test.jpg") center;'></div>
+    <div class="card-img-overlay">
         <h4 class="card-title">{{parking.longName}}</h4>
+    </div>
+    <div class="card-block">
         <p class="card-text">Liczba wolnych miejsc: <b>{{parking.freePlaces}}/{{parking.totalPlaces}}</b>
             <span *ngIf="parking.trend<0" class="tag tag-warning">spada</span>
             <span *ngIf="parking.trend>0" class="tag tag-info">rośnie</span>
