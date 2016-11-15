@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     parkings: Parking[];
 
     getParkings(): void {
-        this.parkingService.getParkings().then(heroes => this.parkings = heroes);
+        this.parkingService.getParkings().then(parkings => this.parkings = parkings);
     }
 
 }
