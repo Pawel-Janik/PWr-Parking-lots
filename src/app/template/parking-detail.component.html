@@ -1,5 +1,7 @@
 <div class="card">
-    <div class="fill card-img-top" style='background: url("assets/test.jpg") center;'></div>
+    <div class="fill card-img-top" [ngStyle]="{'background-image': 'url(assets/'+parking.pictureUrl + ')'}"></div>
+
+
     <div class="card-img-overlay">
         <h4 class="card-title">{{parking.longName}}</h4>
     </div>

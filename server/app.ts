@@ -132,10 +132,26 @@ function fetchData(onSuccess, onError) {
                     totalPlaces = freePlaces;
                 }
 
+                var parkingName = "";
+                switch (parseInt(originalParking.parking_id)){
+                    case 1:
+                        parkingName = "sks.jpg";
+                        break;
+                    case 2:
+                        parkingName = "polinka.jpg";
+                        break;
+                    case 4:
+                        parkingName = "wronski.jpg";
+                        break;
+                    default:
+                        parkingName = "test.jpg";
+                        break;
+                }
+
                 var parkingPlace = {
                     shortName: PARKING_DATA[i].shortName,
                     longName: PARKING_DATA[i].longName,
-                    pictureUrl: PARKING_DATA[i].pictureUrl,
+                    pictureUrl: parkingName,
                     freePlaces: freePlaces,
                     totalPlaces: totalPlaces,
                     measureTime: convertTime(originalParking.czas_pomiaru),
