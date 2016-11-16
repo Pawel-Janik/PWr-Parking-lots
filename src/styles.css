@@ -40,3 +40,14 @@
     color: #eeeeee;
     padding-top: 40px;
 }
+h1{
+    font-size: 18pt;
+    display: inline;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 13pt;
+    display: inline;
+    font-weight: normal;
+}
