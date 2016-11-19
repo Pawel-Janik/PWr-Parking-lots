@@ -9,5 +9,4 @@ export class Parking {
     trend: number;
     parkingId: number;
     chart: Array<ChartPoint>;
-
 }

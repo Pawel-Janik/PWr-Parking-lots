@@ -13,7 +13,7 @@ export class HistoryChartComponent implements OnInit {
     public chart: Array<ChartPoint>;
     // lineChart
     public lineChartData:Array<any> = [
-        []
+        {data: [], label: 'L. miejsc'},
     ];
     public lineChartLabels:Array<any> = [];
     public lineChartType:string = 'line';
@@ -37,12 +37,12 @@ export class HistoryChartComponent implements OnInit {
         var i = 0;
         for (var item of this.chart) {
             if(i%20==0){
-                this.lineChartData[0].push(item.places);
+                this.lineChartData[0].data.push(item.places);
                 this.lineChartLabels.push(item.time);
             }
             i++;
         }
-        this.lineChartData[0].push(this.chart[this.chart.length-1].places);
+        this.lineChartData[0].data.push(this.chart[this.chart.length-1].places);
         this.lineChartLabels.push(this.chart[this.chart.length-1].time);
     }
 }
