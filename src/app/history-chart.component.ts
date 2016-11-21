@@ -36,7 +36,7 @@ export class HistoryChartComponent implements OnInit {
     ngOnInit(): void {
         var i = 0;
         for (var item of this.chart) {
-            if(i%20==0){
+            if(i%Math.floor(this.chart.length/12)==0){
                 this.lineChartData[0].data.push(item.places);
                 this.lineChartLabels.push(item.time);
             }
