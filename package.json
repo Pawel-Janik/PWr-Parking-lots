@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.json & npm run _server:run",
+    "start": "ng serve --host 0.0.0.0  --port 4200 --proxy-config proxy.conf.json & npm run _server:run",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "aot": "ng build --prod --output-path=dist/client && npm run _server:build",
