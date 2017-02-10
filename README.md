@@ -1,5 +1,5 @@
 # PWr-Parking-lots
-Progressive Web App featuring real time data about parking lots on Wrocław Univeristy of Technology. Build Using Angular 2with TypeScript and ~~Python Flask Microframework~~ ExpressJS (mostly Angular though) 
+Progressive Web App featuring real time data about parking lots on Wrocław Univeristy of Technology. Build Using Angular 2 with TypeScript and ~~Python Flask Microframework~~ ExpressJS (mostly Angular though) 
 
 # Live demo
 http://www.parkingomat.pl/
