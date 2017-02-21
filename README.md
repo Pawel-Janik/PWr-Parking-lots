@@ -6,7 +6,7 @@ http://www.parkingomat.pl/
 
 # Install
 ```
-git clone https://github.com/pawelnr1/PWr-Parking-lots.git
+git clone https://github.com/Pawel-Janik/PWr-Parking-lots.git
 cd PWr-Parking-lots
 
 # Install dependencies
