@@ -42,7 +42,9 @@ export class HistoryChartComponent implements OnInit {
             }
             i++;
         }
-        this.lineChartData[0].data.push(this.chart[this.chart.length-1].places);
-        this.lineChartLabels.push(this.chart[this.chart.length-1].time);
+        if(this.chart[this.chart.length-1]) {
+            this.lineChartData[0].data.push(this.chart[this.chart.length - 1].places);
+            this.lineChartLabels.push(this.chart[this.chart.length - 1].time);
+        }
     }
 }
